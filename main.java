@@ -90,5 +90,19 @@ public class main {
         Course math = new Course("Math", 3);
         alice.addCourse(math);
         System.out.println("Alice's Updated GPA: " + alice.getGPA());
+
+
+        Course csBob = new Course("Computer Science", 4);
+        csBob.setGrade(3.0);
+
+        Course mathBob = new Course("Math", 3);
+        mathBob.setGrade(3.5);
+
+        Student bob = new Student("Bob", 5678);
+        bob.addCourse (csBob);
+        bob.addCourse (mathBob);
+
+        System.out.println("\nBob's GPA: " + bob.getGPA());
+        System.out.println("Bob's Transcript:\n" + bob.getTranscript());
     }
 }
